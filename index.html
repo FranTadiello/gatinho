@@ -1,13 +1,12 @@
 <!DOCTYPE html>
-<html lang="pt">
+<html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+
     <title>Criando um gatinho</title>
-
-    <link rel="stylesheet" href="css/style.css">
-
 </head>
 <body>
     <main>
@@ -21,70 +20,70 @@
             <div class="gatometro">
                 <p class="gatometro-titulo">Preguiçoso</p>
                 <div class="gatometro-valor">
-                    <p class="gatometro-numero"> 0 </p>
+                    <p class="gatometro-numero" data-gatometro="preguicoso"> 0 </p>
                 </div>
             </div>
             <div class="gatometro">
                 <p class="gatometro-titulo">Fofo</p>
                 <div class="gatometro-valor">
-                    <p class="gatometro-numero"> 0 </p>
+                    <p class="gatometro-numero" data-gatometro="fofo"> 0 </p>
                 </div>
             </div>
             <div class="gatometro">
                 <p class="gatometro-titulo">Brincalhão</p>
                 <div class="gatometro-valor">
-                    <p class="gatometro-numero"> 0 </p>
+                    <p class="gatometro-numero" data-gatometro="brincalhao"> 0 </p>
                 </div>
             </div>
             <div class="gatometro">
                 <p class="gatometro-titulo">Mau humorado</p>
                 <div class="gatometro-valor">
-                    <p class="gatometro-numero"> 0 </p>
+                    <p class="gatometro-numero" data-gatometro="mauHumor"> 0 </p>
                 </div>
             </div>
         </section>
 
         <section class="coisas">
             <form action="" class="montador">
-                <div class="box montador-conteudo">
+                <div class="montador-conteudo">
                     <div class="conteudo">
-                        <label for="" class="conteudo-titulo">Coisa1</label>
+                        <label for="" class="conteudo-titulo">Comida</label>
                         <div class="controle">
-                            <button class="controle-ajuste" controle="-" >-</button>
-                            <input type="text" class="controle-contador" value="0" contador>
-                            <button class="controle-ajuste" controle="+" >+</button>
+                            <button class="controle-ajuste" data-controle="-" data-parte="comida">-</button>
+                            <input type="text" class="controle-contador" value="0" data-contador>
+                            <button class="controle-ajuste" data-controle="+" data-parte="comida">+</button>
                         </div>
                     </div>
                     <div class="conteudo">
-                        <label for="" class="conteudo-titulo">Coisa2</label>
+                        <label for="" class="conteudo-titulo">Carinho</label>
                         <div class="controle">
-                            <button class="controle-ajuste" controle="-">-</button>
-                            <input type="text" class="controle-contador" value="0" contador>
-                            <button class="controle-ajuste" controle="+">+</button>
+                            <button class="controle-ajuste" data-controle="-" data-parte="carinho">-</button>
+                            <input type="text" class="controle-contador" value="0" data-contador>
+                            <button class="controle-ajuste" data-controle="+" data-parte="carinho">+</button>
                         </div>
                     </div>
                     <div class="conteudo">
-                        <label for="" class="conteudo-titulo">Coisa3</label>
+                        <label for="" class="conteudo-titulo">Brinquedos</label>
                         <div class="controle">
-                            <button class="controle-ajuste" controle="-">-</button>
-                            <input type="text" class="controle-contador" value="0" contador>
-                            <button class="controle-ajuste" controle="+">+</button>
+                            <button class="controle-ajuste" data-controle="-" data-parte="brinquedos">-</button>
+                            <input type="text" class="controle-contador" value="0" data-contador>
+                            <button class="controle-ajuste" data-controle="+" data-parte="brinquedos">+</button>
                         </div>
                     </div>
                     <div class="conteudo">
-                        <label for="" class="conteudo-titulo">Coisa4</label>
+                        <label for="" class="conteudo-titulo">Muito amor</label>
                         <div class="controle">
-                            <button class="controle-ajuste" controle="-">-</button>
-                            <input type="text" class="controle-contador" value="0" contador>
-                            <button class="controle-ajuste" controle="+">+</button>
+                            <button class="controle-ajuste" data-controle="-" data-parte="muitoAmor">-</button>
+                            <input type="text" class="controle-contador" value="0" data-contador>
+                            <button class="controle-ajuste" data-controle="+" data-parte="muitoAmor">+</button>
                         </div>
                     </div>
                     <div class="conteudo">
-                        <label for="" class="conteudo-titulo">Coisa5</label>
+                        <label for="" class="conteudo-titulo">Cobertinha</label>
                         <div class="controle">
-                            <button class="controle-ajuste" controle="-">-</button>
-                            <input type="text" class="controle-contador" value="0" contador>
-                            <button class="controle-ajuste" controle="+">+</button>
+                            <button class="controle-ajuste" data-controle="-" data-parte="cobertinha">-</button>
+                            <input type="text" class="controle-contador" value="0" data-contador>
+                            <button class="controle-ajuste" data-controle="+" data-parte="cobertinha">+</button>
                         </div>
                     </div>
                 </div>
