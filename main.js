@@ -1,6 +1,6 @@
 const controle = document.querySelectorAll("[data-controle]");
-const gatometro = document.querySelectorAll("[data-gatometro]");
-//console.log(gatometro)
+const gatometros = document.querySelectorAll("[data-gatometro]");
+//console.log(gatometros)
 const partes= {
   "comida": {
     "preguicoso": 10,
@@ -42,17 +42,18 @@ controle.forEach( (elemento) => {
 })
 //const operacao = '+'
 function calculaSinal(operacao, controle) {
-    const i = controle.querySelector("[data-contador]")
-    //console.log(i)
+    const parte = controle.querySelector("[data-contador]")
+    //console.log(parte)
     if(operacao === "-"){
-        i.value = parseInt(i.value) - 1
+        parte.value = parseInt(parte.value) - 1
     } else {
-        i.value = parseInt(i.value) + 1
+        parte.value = parseInt(parte.value) + 1
     }  
+    return parte;
 }
 function atualizaGatometro(parte){
     //console.log(parte)
-    gatometro.forEach( (elemento) => {
+    gatometros.forEach( (elemento) => {
         //console.log(elemento.dataset.gatometro)
         elemento.textContent = parseInt(elemento.textContent) + partes[parte][elemento.dataset.gatometro]
     })
